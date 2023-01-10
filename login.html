@@ -1,0 +1,133 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./1.jpg">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\PANKAJ KUMAR\Desktop\cse 326 project\css\style.css">
+    <title>ABC Property</title>
+    <style>
+        .login-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(130deg, rgb(155,1,155),
+    rgb(1,118,185));
+    z-index: 99;
+    transition: 0.5s ease-in-out;
+    
+}
+.login-box{
+    width: 300px;
+    height:400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 0 20px;
+    box-shadow: 0 0 20px #000;
+}
+.login-box h2{
+font-size: 3em;
+text-align: center;
+margin: 20px 0;
+font-weight: bolder;
+text-transform: uppercase;
+}
+.login-box label{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    background: #eee;
+}
+.login-box input{
+    width:210px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #eee;
+}
+.login-box .check{
+background: white;
+height: 25px;
+font-size: 12px;
+}
+.login-box [type="checkbox"]{
+    width:15px;
+    height:15px;
+    margin-right: 5px;
+    transform: translateY(3px);
+}
+.login-box button{
+    width: 100%;
+    height: 40px;
+    background: crimson;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.login-box p{
+    text-align: center;
+    margin: 5px 0;
+    color: #555;
+}
+.login-box a{
+    text-decoration: none;
+    color: crimson;
+    display: inline-block;
+}
+.login-box .btn{
+    width: 100%;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+.login-box .check span{
+    color:green;
+}
+    </style>
+    </head>
+
+<body>
+
+
+<div class="login-container">
+    <div class="login-box hidden" id="res">
+        <form>
+            <h2>Login</h2>
+            <label for="log-mail">
+                <input type="email" name="mail" id="log-mail"
+                required placeholder="Your Email">
+            </label>
+            <label for="log-pass">
+                <input type="password" name="pass" id="log-pass"
+                required placeholder="Your Password">
+            </label>
+            <label for="chk" class="check">
+                <input type="checkbox" name="chk" id="chk">
+                 Remember Me
+                </label>
+            <label for="log-mail">
+                <button onclick="msg()">Login</button>
+                <script>
+                    function msg(){
+                        alert("Successfully Logged in")
+                        document.location.href="index.html";
+                    }
+                </script>
+                <p>Not a member? <a href="./register.html" class="next-log">Register now</a></p>
+            </label>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

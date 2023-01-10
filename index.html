@@ -1,0 +1,675 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./1.jpg">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/PANKAJ%20KUMAR/Downloads/Compressed/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
+   
+    <title>Real Estate Property</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    min-height: 70px;
+    border-bottom: 1px solid #555;
+    overflow: hidden;
+    position: relative;
+}
+header .logo{
+    float: left;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-shadow: 4px 5px 10px #ddd;
+}
+header ul{
+    float: right;
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    line-height: 70px;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.7;
+    padding: 10px 20px;
+}
+header ul li a:hover{
+    font-weight: bold;
+    opacity: 1;
+}
+header ul li a.active{
+    background: black;
+    border-radius: 50px;
+    color: white;
+}
+header ul li a.current{
+    background-color:royalblue ;
+}
+header .menu{
+    position: absolute;
+    top:37px;
+    right: 10px;
+transform:translateY(-50%) ;
+background: black;
+color: white;
+opacity: 0.7;
+text-align: center;
+text-transform: uppercase;
+padding: 10px 20px;
+letter-spacing: 2px;
+cursor: pointer;
+display: none;
+}
+
+
+.box select{
+    height:40px;
+    width: 120px;
+    outline: none;
+    display: inline;
+    padding: 0 5px;
+    
+}
+.button {
+    background-color: coral;
+    color: white;
+    outline: none;
+    border: none;
+    width: 5%;
+    height: 40px;
+    margin-top: 32px;
+}
+.button:hover{
+    background-color: tomato;
+    transition:0.5s;
+}
+.box{
+    width: 1350px;
+    height: 300px;
+    padding: 20px;
+    margin: 15px auto;
+    box-shadow: 0px 0px 10px 2px grey;
+    border: 5px violet;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./css/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .box h1{
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+ }
+#properti{
+    width: 100%;
+    margin-top: 20px;
+}
+#properti h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+#properti .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#properti .content .box2{
+    flex: 1;
+    min-width: 300px;
+    min-height: 500px;
+overflow: hidden;
+margin: 15px;
+padding: 15px;
+box-shadow: 4px 5px 10px grey;
+transition: 0.5 ease-in-out;
+cursor:pointer;
+}
+#properti .content .box2:hover{
+    box-shadow: none;
+}
+#properti .content .box2 img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+#properti .content .box2 h3{
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-top: 10px;
+}
+#properti span{
+color:teal;
+padding-right: 10px;
+}
+#properti p{
+    line-height: 1.4;
+    margin: 5px 0;
+}
+#properti a{
+    text-decoration: none;
+    color: white;
+    background: #555;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+#services{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+#services h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+#services .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:20px 0;
+    cursor:pointer;
+}
+#services .content .card{
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+#services .content .card img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+#services .content .card h3{
+    font-size: 1.3em;
+    letter-spacing: 4px;
+}
+#services .content .card p{
+    color: #888;
+    margin: 10px 0;
+}
+#contact{
+    width: 100%;
+    margin-top: 20px;
+}
+#contact h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+#contact .content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact form{
+    flex: 1;
+    min-width: 300px;
+    padding:30px 15px;
+}
+#contact form input,
+#contact form textarea,
+#contact form button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #555;
+    margin: 15px 0;
+    resize: none;
+}
+#contact .map{
+    min-width: 300px;
+    flex: 1;
+    padding: 30px 15px;
+}
+#contact .map iframe{
+width:100%;
+}
+#contact form button{
+background: rgba(0,96,151);
+height: 40px;
+color: white;
+letter-spacing: 4px;
+cursor:pointer;
+text-transform: uppercase;
+}
+#contact .box2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact .box2 .text{
+    flex: 1;
+    margin: 15px;
+min-width: 300px;
+}
+#contact .box2 .text h3{
+    color: teal;
+    letter-spacing: 3px;
+}
+#contact .box2 .text p{
+    line-height: 1.4;
+    margin: 10px 0;
+}
+#contact .box2 .text span{
+    color:crimson;
+}
+footer{
+    width:100%;
+    max-width: 1400px;
+    background: #811;
+    
+    color: white; 
+}
+footer .content{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .content .box2{
+    flex:1;
+    min-width: 300px;
+    margin: 30px 10px;
+}
+footer .content .box2 h2{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+footer .content .box2 p{
+opacity: 0.5;
+margin: 15px 0;
+}
+footer .content .box2 h3{
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+footer .row{
+    border-top:1px solid rgb(82, 68, 68);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    position: relative;
+    flex-wrap: wrap;
+}
+footer .row p{
+    flex: 1;
+    min-width: 470px;
+    margin-left: 15px;
+}
+
+.top-scroll{
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #111;
+    text-align: center;
+    line-height: 33px;
+cursor: pointer;
+border: 1px solid black;
+}
+
+.top-scroll a{
+    color: white;
+
+}
+
+.hidden{
+    display: none;
+}
+@media (max-width:1000px){
+    header ul{
+        position:fixed;
+        top:0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        z-index: 90;
+        display: flex;
+        justify-content: space-around;
+        flex-direction:column;
+        transition: 0.5s ease-in-out;
+    }
+    header .menu{
+        display:block;
+        line-height:normal;}
+
+        header ul.menu-toggle{
+left: 0;
+        }
+        header ul li{
+            line-height: normal;
+            display: block;
+        }
+        header ul li a.active{
+border-radius: 0;
+        }
+        footer .row{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .box{
+        width:100%;
+    }
+}
+
+
+    </style>
+</head>
+ <body>
+        <header>
+            <div class="logo">
+                <h1>
+                    Real Estate
+                </h1>
+            </div>
+            <ul>
+                <li><a class="current" href="./index.html">Home</a></li>
+                <li><a href="./Buy.html">Buy</a></li>
+                <li><a href="./Rent.html">Rent</a></li>
+                <li><a href="./sell.html">Sell</a></li>
+                <li><a href="#Contact">Contact us</a></li>
+                <li><a href="./login.html" class="active">Sign Up/Sign In</a></li>
+                <li class="menu">Close</li>
+            </ul>
+            <div class="menu"> Menu </div>
+        </header>
+           <div class="box">
+                   <h1><center> Find Your Dream Home Today </center></h1>
+                     <center>
+                <select id="location" name="Location">
+                    <option value="" disabled selected hidden>Location</option>
+                    <option>Bhopal</option>
+                    <option>Bengalore</option>
+                    <option>Chennai</option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option>Goa</option>
+                    <option>Patna</option>
+                    <option>Rajasthan</option>
+                    </select>
+                    <select id="propertytype" name="type">
+                <option value="" disabled selected hidden>Property Type</option>
+                <option>Land</option>
+                <option>Office</option>
+                <option>Residential</option>
+                <option>Special Purpose</option>
+                <option>Other</option>
+               </select>
+               <select id="budget" name="budget">
+                <option value="" disabled selected hidden>Budget</option>
+                <option>>5,00,000</option>
+                <option>>10,00,000</option>
+                <option>>20,00,000</option>
+                <option>>30,00,000</option>
+                <option>>40,00,000</option>
+               </select>
+               <button class="button" type="button">Search</button>
+            </center>
+            </div>
+
+    <div id="properti">
+        <h2>Properties</h2>
+        <div class="content">
+            <div class="box2">
+                <img src="/css/property1.jfif" alt="prop1">
+                <div class="text">
+                    <h3>Property 01</h3>
+                    <span>Rs. 15,00,000</span>
+                    <p>Very beautifully furnished along with a small garden 
+                        
+                    </p>
+                    <div class="details">
+                        <span>1200 sq ft</span>
+                        <span>2 bedrooms</span>
+                        <span>2 bathrooms</span>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/property2.jfif" alt="prop2">
+                <div class="text">
+                    <h3>Property 02</h3>
+                    <span>Rs. 20,00,000</span>
+                    <p>Very beautifully designed by professionals
+                        A small garden,dedicated vehicle parking 
+                    </p>
+                    <div class="details">
+                        <span>2000 sq ft</span>
+                        <span>2 bedrooms</span>
+                        <span>2 bathrooms</span>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/property3.jpeg" alt="prop3">
+                <div class="text">
+                    <h3>Property 03</h3>
+                    <span>Rs.20,00,000</span>
+                    <p>Very beautifully designed by professionals
+                        A small garden,dedicated vehicle parking 
+                    </p>
+                    <div class="details">
+                        <span>2000 sq ft</span>
+                        <span>3 bedrooms</span>
+                        <span>2 bathrooms</span>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="css/property4.jpeg" alt="prop4">
+                <div class="text">
+                    <h3>Property 04</h3>
+                    <span>Rs. 25,00,000</span>
+                    <p>Very beautifully designed by professionals
+                        A small garden,dedicated vehicle parking 
+                    </p>
+                    <div class="details">
+                        <span>2500 sq ft</span>
+                        <span>4 bedrooms</span>
+                        <span>2 bathrooms</span>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/property5.jpg" alt="5">
+                <div class="text">
+                    <h3>Property 05</h3>
+                    <span>Rs. 30,00,000</span>
+                    <p>Very beautifully designed Living Room
+                        A small garden,dedicated vehicle parking 
+                    </p>
+                    <div class="details">
+                        <span>3000 sq ft</span>
+                        <span>4 bedrooms</span>
+                        <span>2 bathrooms</span>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/property6.jpg" alt="p6">
+                <div class="text">
+                    <h3>Property 06</h3>
+                    <span>Rs. 35,00,000</span>
+                    <p>Living room designed by asian paints
+                        A small garden,dedicated vehicle parking 
+                    </p>
+                    <div class="details">
+                        <span>5000 sq ft</span>
+                        <span>4 bedrooms</span>
+                        <span>2 bathrooms</span>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/property7.jpg" alt="p7">
+                <div class="text">
+                    <h3>Property 07</h3>
+                    <span>Rs. 40,00,000</span>
+                    <p>Very beautifully designed by professionals
+                        A small garden,dedicated vehicle parking 
+                    </p>
+                    <div class="details">
+                        <span>5200 sq ft</span>
+                        <span>4 bedrooms</span>
+                        <span>3 bathrooms</span>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/property8.jfif" alt="p8">
+                <div class="text">
+                    <h3>Property 08</h3>
+                    <span>Rs. 45,00,000</span>
+                    <p>Very beautifully designed by professionals
+                        A small garden,dedicated vehicle parking 
+                    </p>
+                    <div class="details">
+                        <span>6000 sq ft</span>
+                        <span>4 bedrooms</span>
+                        <span>4 bathrooms</span>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="services">
+        <h2>SERVICES WE PROVIDE</h2>
+       
+        <div class="content">
+            <div class="card">
+                <img src="css/sanitized.jpg" alt="">
+                <h3>Sanitized Homes</h3>
+                <p>
+                  Get your home sanitized at minimal cost
+                </p>
+            </div>
+            <div class="card">
+                <img src="css/laundry.jpg" alt="">
+                <h3>Laundry Service</h3>
+                <p>
+                  Get your clothes washed at our laundry service
+                </p>
+            </div>
+            <div class="card">
+                <img src="css/parking.jfif" alt="">
+                <h3>Parking </h3>
+                <p>
+                  Park your vehicles with the 
+                  dedicated garage with ample
+                  amount of space
+                </p>
+            </div>
+        </div> 
+    </div>
+    <div id="Contact">
+        <h2>Contact Us</h2>
+        <div class="content">
+            <form>
+                <input type="text" name="name" id="name"
+                required placeholder="Your Name">
+                <input type="email" name="mail" id="mail"
+                required placeholder="Your Email">
+                <input type="tel" name="tel" id="tel"
+                required placeholder="Phone Number">
+                <textarea name="mess" id="mess" rows="7"
+                placeholder="Write Your message here...">
+                </textarea>
+                <button onclick="msg()">Send <i class="fa fa-paper-plane"></i></button>
+                <script>
+                    function msg(){
+                        alert("Thank You for contacting us we will get to you soon.")
+                        
+                    }
+                </script>
+            </form>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29317.522718327295!2d77.29751239763377!3d23.290698896959587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c671e74ffa1eb%3A0x1d1482e6390fe2c3!2sCantt%20Area%2C%20Bairagarh%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1620145328729!5m2!1sen!2sin"  height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+</div>
+<footer>
+    <div class="content">
+        <div class="box2">
+            <h2>ABOUT US</h2>
+            <p>Welcome to Real Estate Company
+                We provide deals for property sales,
+                property for rent and property buy 
+                at very affordable prices in your budget.
+                You can explore the properties at your 
+                required budget.
+            </p>
+            <h3>Trusted by more than 100000+ people</h3>
+        </div>
+        <div class="box2">
+            <h2> CONTACT US</h2>
+            <H3>Location</H3>
+            <p>Plot no. 16 A,CanttArea Bairagarh <br> Bhopal, Madhya Pradesh<br>
+            </p>
+            <h3>Phone</h3>
+            <p>+91 8965245678</p>
+            <h3>Email</h3>
+            <p>info@gmail.com</p>
+        </div>
+    </div>
+    <div class="row">
+        <p> &copy; 2021 Real Estate. All Rights Reserved </p>
+    </div>
+</footer>
+ 
+<div class="top-scroll">
+    <a href="#"> &#11165; </a>
+</div>
+<script>
+    const menuToggle = document.querySelectorAll('header .menu');
+    const menu=document.querySelector('header ul');
+    menuToggle.forEach(item =>{
+        item.addEventListener('click', ()=>{
+            menu.classList.toggle('menu-toggle');
+        })
+    })
+</script>
+
+</body>
+
+</html>

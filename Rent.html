@@ -1,0 +1,438 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./1.jpg">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Real Estate Property</title>
+        <style>
+             *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body{
+        min-height: 100vh;
+    }
+    header{
+        width: 100%;
+        min-height: 70px;
+        border-bottom: 1px solid #555;
+        overflow: hidden;
+        position: relative;
+    }
+    header .logo{
+        float: left;
+        line-height: 70px;
+        text-transform: uppercase;
+        text-shadow: 4px 5px 10px #ddd;
+    }
+    header ul{
+        float: right;
+        list-style: none;
+    }
+    header ul li{
+        display: inline-block;
+        line-height: 70px;
+    }
+    header ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        opacity: 0.7;
+        padding: 10px 20px;
+    }
+    header ul li a:hover{
+        font-weight: bold;
+        opacity: 1;
+    }
+    header ul li a.active{
+        background: black;
+        border-radius: 50px;
+        color: white;
+    }
+    header ul li a.current{
+        background-color:royalblue ;
+    
+    }
+    header .menu{
+        position: absolute;
+        top:37px;
+        right: 10px;
+    transform:translateY(-50%) ;
+    background: black;
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: none;
+    }
+    #properti{
+        width: 100%;
+        margin-top: 20px;
+    }
+    #properti h2{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+    }
+    #properti .content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #properti .content .box2{
+        flex: 1;
+        min-width: 300px;
+        min-height: 500px;
+    overflow: hidden;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 4px 5px 10px grey;
+    transition: 0.5 ease-in-out;
+    cursor:pointer;
+    }
+    #properti .content .box2:hover{
+        box-shadow: none;
+    }
+    #properti .content .box2 img{
+        width: 100%;
+        height: 300px;
+        display: block;
+        object-fit: cover;
+    }
+    #properti .content .box2 h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    }
+    #properti span{
+    color:teal;
+    padding-right: 10px;
+    }
+    #properti p{
+        line-height: 1.4;
+        margin: 5px 0;
+    }
+    #properti a{
+        text-decoration: none;
+        color: white;
+        background: #555;
+        display: block;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    .show a{
+        text-decoration: none;
+        color: white;
+        background: grey;
+        display: block;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    
+    
+        </style>
+         <script>
+            function msg(){
+                alert("Sorry No More Data Found")
+                document.location.href="index.html";
+            }
+        </script>
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                    <h1>
+                        Real Estate
+                    </h1>
+                </div>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./Buy.html">Buy</a></li>
+                    <li><a class="current" href="./Rent.html">Rent</a></li>
+                    <li><a href="./sell.html">Sell</a></li>
+                    <li><a href="./index.html">Contact us</a></li>
+                    <li><a href="./login.html" class="active">Sign Up/Sign In</a></li>
+                    <li class="menu">Close</li>
+                </ul>
+                <div class="menu"> Menu </div>
+            </header>
+            <div id="properti">
+                <h2>FOR LIVING PURPOSE
+                </h2>
+                <div class="content">
+                    <div class="box2">
+                        <img src="/css/rent1.jpg" alt="prop1">
+                        <div class="text">
+                            <h3>Property 01</h3>
+                            <span>Rs. 25,00,000/month</span>
+                            <p>Very beautifully furnished along with a small garden 
+                                
+                            </p>
+                            <div class="details">
+                                <span>1200 sq ft</span>
+                                <span>2 bedrooms</span>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <a href="#">RENT</a>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="/css/rent2.jpg" alt="prop2">
+                        <div class="text">
+                            <h3>Property 02</h3>
+                            <span>Rs. 30,000/month</span>
+                            <p>Very beautifully designed by professionals
+                                A small garden,dedicated vehicle parking 
+                            </p>
+                            <div class="details">
+                                <span>2000 sq ft</span>
+                                <span>2 bedrooms</span>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <a href="#">RENT</a>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="/css/rent3.jpg" alt="prop3">
+                        <div class="text">
+                            <h3>Property 03</h3>
+                            <span>Rs.32,000/month</span>
+                            <p>Very beautifully designed by professionals
+                                A small garden,dedicated vehicle parking 
+                            </p>
+                            <div class="details">
+                                <span>2000 sq ft</span>
+                                <span>3 bedrooms</span>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <a href="#">RENT</a>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="css/rent4.jpg" alt="prop4">
+                        <div class="text">
+                            <h3>Property 04</h3>
+                            <span>Rs. 35,000/month</span>
+                            <p>Very beautifully designed by professionals
+                                A small garden,dedicated vehicle parking 
+                            </p>
+                            <div class="details">
+                                <span>2500 sq ft</span>
+                                <span>4 bedrooms</span>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <a href="#">RENT</a>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="/css/rent5.jpg" alt="5">
+                        <div class="text">
+                            <h3>Property 05</h3>
+                            <span>Rs. 33,000/month</span>
+                            <p>Very beautifully designed Living Room
+                                A small garden,dedicated vehicle parking 
+                            </p>
+                            <div class="details">
+                                <span>3000 sq ft</span>
+                                <span>4 bedrooms</span>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <a href="#">RENT</a>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="/css/rent6.jpg" alt="p6">
+                        <div class="text">
+                            <h3>Property 06</h3>
+                            <span>Rs. 40,000/MONTH</span>
+                            <p>Living room designed by asian paints
+                                A small garden,dedicated vehicle parking 
+                            </p>
+                            <div class="details">
+                                <span>5000 sq ft</span>
+                                <span>4 bedrooms</span>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <a href="#">RENT</a>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="/css/rent7.jpg" alt="p6">
+                        <div class="text">
+                            <h3>Property 07</h3>
+                            <span>Rs. 40,000/MONTH</span>
+                            <p>Living room designed by asian paints
+                                A small garden,dedicated vehicle parking 
+                            </p>
+                            <div class="details">
+                                <span>5000 sq ft</span>
+                                <span>4 bedrooms</span>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <a href="#">RENT</a>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="/css/rent8.jpg" alt="p6">
+                        <div class="text">
+                            <h3>Property 08</h3>
+                            <span>Rs. 40,000/MONTH</span>
+                            <p>Living room designed by asian paints
+                                A small garden,dedicated vehicle parking 
+                            </p>
+                            <div class="details">
+                                <span>5000 sq ft</span>
+                                <span>4 bedrooms</span>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <a href="#">RENT</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+    <div class="show">
+        <CENTER>
+            <a href="" onclick="msg()">SHOW MORE</a>
+        </CENTER>
+        
+    </div>
+    <div id="properti" style:"margin-top=50px;">
+        <h2>FOR OFFICE PURPOSE
+        </h2>
+        <div class="content">
+            <div class="box2">
+                <img src="/css/office1.jpg" alt="prop1">
+                <div class="text">
+                    <h3>Property 01</h3>
+                    <span>Rs. 50,000/month</span>
+                    <div class="details">
+                        <span>5000 sq ft</span>
+                         <span>Several Rooms</span>
+                    </div>
+                    <a href="#">RENT</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/office3.jpg" alt="prop2">
+                <div class="text">
+                    <h3>Property 02</h3>
+                    <span>Rs. 30,000/month</span>
+                    <div class="details">
+                        <span>2000 sq ft</span>
+                        <span>Several rooms</span>
+                        <SPAN>Multistorey building</SPAN>
+                    </div>
+                    <a href="#">RENT</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/office4.jpg" alt="prop3">
+                <div class="text">
+                    <h3>Property 03</h3>
+                    <span>Rs.32,000/month</span>
+                  
+                    <div class="details">
+                        <span>2000 sq ft</span>
+                    <span>Several rooms</span>
+                    <SPAN>Multistorey building</SPAN>
+                    </div>
+                    <a href="#">RENT</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="css/office5.jpg" alt="prop4">
+                <div class="text">
+                    <h3>Property 04</h3>
+                    <span>Rs. 35,000/month</span>
+                    
+                    <div class="details">
+                        <span>2500 sq ft</span>
+                        <span>Several rooms</span>
+                        <SPAN>Multistorey building</SPAN>
+                    </div>
+                    <a href="#">RENT</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/office6.jpg" alt="5">
+                <div class="text">
+                    <h3>Property 05</h3>
+                    <span>Rs. 33,000/month</span>
+                    
+                    <div class="details">
+                        <span>3000 sq ft</span>
+                        <span>Several rooms</span>
+                        <SPAN>Multistorey building</SPAN>
+                    </div>
+                    <a href="#">RENT</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/office7.jpg" alt="p6">
+                <div class="text">
+                    <h3>Property 06</h3>
+                    <span>Rs. 40,000/MONTH</span>
+                   
+                    <div class="details">
+                        <span>5000 sq ft</span>
+                        <span>Several rooms</span>
+                    <SPAN>Multistorey building</SPAN>
+                    </div>
+                    <a href="#">RENT</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/office8.jpg" alt="p6">
+                <div class="text">
+                    <h3>Property 07</h3>
+                    <span>Rs. 40,000/MONTH</span>
+                   
+                    <div class="details">
+                        <span>5000 sq ft</span>
+                        <span>Several rooms</span>
+                    <SPAN>Multistorey building</SPAN>
+                    </div>
+                    <a href="#">RENT</a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="/css/ofiice2.jpg" alt="p6">
+                <div class="text">
+                    <h3>Property 08</h3>
+                    <span>Rs. 40,000/MONTH</span>
+                   
+                    <div class="details">
+                        <span>5000 sq ft</span>
+                        <span>Several rooms</span>
+                    <SPAN>Multistorey building</SPAN>
+                    </div>
+                    <a href="#">RENT</a>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="show">
+        <CENTER>
+            <a href="" onclick="msg()">SHOW MORE</a>
+        </CENTER>
+        
+    </div>
+        </body>
+    </html>
